@@ -4,5 +4,10 @@ gostart
 Basic skeleton for go web apps.
 I use this to kickstart my go-based web apps so I focus on building stuff instead of bootstrapping.
 
-## Modules included
-* Martini (https://github.com/codegangsta/martini)
+## Features
+* Bare bone web server using Martini templates.
+* Works with AppEngine as well as a standalone server.
+
+## Go modules included
+* Martini - https://github.com/codegangsta/martini
+* docopt.go - https://github.com/docopt/docopt.go (Forked to https://github.com/theDukeW/docopt-go to enable go-get)
