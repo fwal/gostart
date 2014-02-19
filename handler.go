@@ -3,9 +3,10 @@ package main
 import (
 	"github.com/codegangsta/martini"
 	"github.com/codegangsta/martini-contrib/render"
+	"net/http"
 )
 
-func Martini() *martini.ClassicMartini {
+func httpHandler() http.Handler {
 	m := martini.Classic()
 
 	m.Use(render.Renderer(render.Options{

@@ -6,6 +6,6 @@ import (
 )
 
 func init() {
-	m := Martini()
-	http.Handle("/", m)
+	h := httpHandler()
+	http.Handle("/", h)
 }

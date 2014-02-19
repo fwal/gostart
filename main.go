@@ -34,9 +34,9 @@ func main() {
 
 	fmt.Println("Starting server")
 
-	m := Martini()
+	h := httpHandler()
 
-	if err := http.ListenAndServe(ip+":"+port, m); err != nil {
+	if err := http.ListenAndServe(ip+":"+port, h); err != nil {
 		fmt.Printf("Server error:%v \n", err)
 		panic(err)
 	}
