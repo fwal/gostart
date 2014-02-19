@@ -32,7 +32,7 @@ func main() {
 		port = args["--port"].(string)
 	}
 
-	fmt.Println("Starting server")
+	fmt.Printf("Server running at %s:%s\n", ip, port)
 
 	h := httpHandler()
 
